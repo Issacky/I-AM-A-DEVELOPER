@@ -10,11 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var massageLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       print("👍🏻 viewDidLoad has run!")
+        massageLabel.text=" I am a fabulous!"
     }
 
-
+    @IBAction func messageButtonPressed(_ sender: UIButton) {
+        print("😎 The massage button was pressed!")
+        massageLabel.text=" I am a developer!"
+    }
+    
 }
 
